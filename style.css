@@ -18,9 +18,27 @@ body {
 /* Hello */
 header {
     padding: 1rem;
-    display: flex;
-    justify-content: flex-end;
+    /* display: flex;
+    justify-content: flex-end; */
     background-color: var(--secondary-color);
+}
+
+header form {   
+    display: flex;
+    justify-content: flex-end; 
+}
+
+header .categories a{
+    float: left;
+    padding: 1rem;
+    color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.categories a:hover{
+    color:black;
+    font-weight: bolder;
+    font-size: 1.1rem;
 }
  
 .search {
