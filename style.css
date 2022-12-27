@@ -15,7 +15,7 @@ body {
     margin: 0;
 }
  
-/* Hello */
+
 header {
     padding: 1rem;
     /* display: flex;
@@ -35,6 +35,24 @@ header .categories a{
   text-decoration: none;
   font-size: 1rem;
 }
+
+@media (max-width: 520px){
+  header .categories a{
+    padding: 0.5rem;
+  font-size: 0.9rem;
+ 
+}
+.movie {
+  width: 800px;
+  margin: 0.5rem;
+}
+.search {
+  border-radius: 20px;
+  font-size: 5rem;
+  padding: 0.25rem 0.5rem;
+}
+}
+
 .categories a:hover{
     color:black;
     font-weight: bolder;
@@ -309,4 +327,55 @@ footer{
   
   .bottom-details .bottom_text a{
     margin-right: 10px;
+  }
+
+  @media (max-width: 900px) {
+    footer .content .link-boxes{
+      flex-wrap: wrap;
+    }
+    footer .content .link-boxes .input-box{
+      width: 40%;
+      margin-top: 10px;
+    }
+  }
+  @media (max-width: 700px){
+    footer{
+      position: relative;
+    }
+    .content .top .logo-details{
+      font-size: 26px;
+    }
+    .content .top .media-icons a{
+      height: 35px;
+      width: 35px;
+      font-size: 14px;
+      line-height: 35px;
+    }
+    /* footer .content .link-boxes .box{
+      width: calc(100% / 3 - 10px);
+    } */
+    footer .content .link-boxes .input-box{
+      width: 60%;
+    }
+    .bottom-details .bottom_text span,
+    .bottom-details .bottom_text a{
+      font-size: 12px;
+    }
+  }
+  @media (max-width: 520px){
+    footer::before{
+      top: 145px;
+    }
+    footer .content .top{
+      flex-direction: column;
+    }
+    .content .top .media-icons{
+      margin-top: 16px;
+    }
+    /* footer .content .link-boxes .box{
+      width: calc(100% / 2 - 10px);
+    } */
+    footer .content .link-boxes .input-box{
+      width: 100%;
+    }
   }
