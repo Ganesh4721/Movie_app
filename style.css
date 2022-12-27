@@ -36,23 +36,6 @@ header .categories a{
   font-size: 1rem;
 }
 
-@media (max-width: 520px){
-  header .categories a{
-    padding: 0.5rem;
-  font-size: 0.9rem;
- 
-}
-.movie {
-  width: 800px;
-  margin: 0.5rem;
-}
-.search {
-  border-radius: 20px;
-  font-size: 5rem;
-  padding: 0.25rem 0.5rem;
-}
-}
-
 .categories a:hover{
     color:black;
     font-weight: bolder;
@@ -148,6 +131,25 @@ main {
 .movie:hover .overview {
     transform: translateY(0);
 }
+
+@media screen and (min-width: 400px) and (max-width:650px){
+  header{
+      height: 150px;
+  }
+  form {
+   position: absolute; 
+   top: 80px; 
+   left: 25%;
+  }
+  .categories{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+}  
+
+
+
 
 
 /* Footer Section */
